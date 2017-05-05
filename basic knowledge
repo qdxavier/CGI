@@ -52,7 +52,13 @@ int get_input()
 		length = atoi(getenv("CONTENT_LENGTH"));
 		if(!length)
 		{
-			inputstr = malloc();
+			inputstr = malloc(size(char)*length + 1);
 		}
+		fread(inputstr, sizeof(char), length, stdin);
+	}
+	else if(!strcmp(method, "get"))
+	{
+		inputstr = getenv("QUERY_STRING");
+		length = strlen(inputstr);
 	}
 }
