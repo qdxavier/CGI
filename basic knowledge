@@ -14,7 +14,7 @@ CGI: 通用网关接口（Common Gateway Interface）, 是一个WEB服务器主�
 环境变量
 1. 与请求相关的环境变量   REQUEST_METHOD    						  POST/GET
 											 POST:从标准输入中获得数据
-											 GET: 从QUERY_STRING中获取数据
+											 GET: 从QUERY_STRING中获取数据,数据包含在URL中
 											 QUERY_STRING
 											 CONTENT_LENGTH
 											 CONTENT_TYPE
